@@ -12,6 +12,8 @@
   --teal:     #3ecfbf;
   --teal-hot: #65ddd0;
   --teal-dark: #259e91;
+  --beige:     #c9a87c;
+  --beige-hot: #dbbe96;
   --white:    #e2d6be;
   --grey:     #888;
   --border:   #2a2a2a;
@@ -68,7 +70,7 @@ img { max-width: 100%; display: block; }
   font-size: 1.6rem;
   color: var(--white);
   letter-spacing: 2px;
-  text-shadow: 2px 2px 0 var(--teal);
+  text-shadow: 2px 2px 0 var(--beige);
 }
 
 .nav-logo .logo-dot {
@@ -127,7 +129,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background:
     radial-gradient(ellipse at 20% 50%, rgba(62,207,191,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 50%, rgba(62,207,191,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(201,168,124,0.08) 0%, transparent 60%),
     var(--black);
 }
 
@@ -150,7 +152,7 @@ img { max-width: 100%; display: block; }
 }
 .splatter-1 {
   width: 400px; height: 400px;
-  background: rgba(62,207,191,0.10);
+  background: rgba(201,168,124,0.13);
   top: -100px; left: -100px;
   animation: pulse 6s ease-in-out infinite alternate;
 }
@@ -179,8 +181,8 @@ img { max-width: 100%; display: block; }
   line-height: 1;
   color: #d8c9a8;
   text-shadow:
-    4px 4px 0 var(--teal-dark),
-    8px 8px 0 rgba(62,207,191,0.20),
+    4px 4px 0 var(--beige),
+    8px 8px 0 rgba(201,168,124,0.25),
     -2px -1px 0 rgba(255,255,255,0.05);
   letter-spacing: 4px;
   /* slight rotation for punk feel */
@@ -293,7 +295,7 @@ section {
   font-family: var(--font-logo);
   font-size: clamp(2rem, 6vw, 3.5rem);
   color: var(--white);
-  text-shadow: 3px 3px 0 var(--teal-dark);
+  text-shadow: 3px 3px 0 var(--beige);
   letter-spacing: 3px;
 }
 
@@ -450,7 +452,7 @@ section {
 .photo-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(37,158,145,0.80);
+  background: rgba(201,168,124,0.80);
   color: var(--white);
   font-family: var(--font-head);
   font-weight: 700;
@@ -589,7 +591,7 @@ footer {
   font-family: var(--font-logo);
   font-size: 1.5rem;
   color: var(--white);
-  text-shadow: 2px 2px 0 var(--teal);
+  text-shadow: 2px 2px 0 var(--beige);
 }
 
 .footer-nav {
