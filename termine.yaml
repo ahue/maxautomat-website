@@ -1,0 +1,39 @@
+# =============================================
+# MAXAUTOMAT – Termine
+# =============================================
+# Felder:
+#   datum:   YYYY-MM-DD
+#   titel:   Name des Events
+#   venue:   Location
+#   einlass: Uhrzeit (optional)
+#   start:   Uhrzeit (optional)
+#   tickets: URL (optional, weglassen = kein Button)
+#   privat:  true/false (optional, default false)
+# =============================================
+
+termine:
+  - datum: 2026-03-22
+    titel: Rock im Hinterhof
+    venue: Kulturzentrum Alte Fabrik, Musterstadt
+    einlass: "19:00"
+    start: "20:30"
+    tickets: https://example.com/tickets/1
+
+  - datum: 2026-04-05
+    titel: Frühlingsrock Open Air
+    venue: Stadtpark Bühne, Beispielstadt
+    einlass: "17:00"
+    start: "19:00"
+    tickets: https://example.com/tickets/2
+
+  - datum: 2026-04-18
+    titel: Private Firmenfeier
+    venue: Details auf Anfrage
+    privat: true
+
+  - datum: 2026-05-10
+    titel: Rock & Roll Nacht
+    venue: Club Basement, Irgendwo
+    einlass: "20:00"
+    start: "21:00"
+    tickets: https://example.com/tickets/4

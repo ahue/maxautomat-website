@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maxautomat – Rock Cover Band</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Oswald:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">MAX<span class="logo-dot">.</span>AUTOMAT</div>
+    <ul class="nav-links">
+      <li><a href="#termine">Termine</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#fotos">Fotos</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menü öffnen">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-bg-texture"></div>
+    <div class="hero-content">
+      <div class="logo-wrap">
+        <span class="logo-band">MAX<span class="logo-dot">.</span>AUTOMAT</span>
+        <span class="logo-tagline">Rock. Live. Laut.</span>
+      </div>
+      <p class="hero-sub">Rock Covers – von den 70ern bis heute</p>
+      <a href="#termine" class="btn-primary">Nächste Shows</a>
+    </div>
+    <div class="hero-splatter splatter-1"></div>
+    <div class="hero-splatter splatter-2"></div>
+  </header>
+
+  <!-- TERMINE -->
+  <section id="termine">
+    <div class="section-header">
+      <h2><span class="scratchy">//</span> Termine <span class="scratchy">//</span></h2>
+    </div>
+    <div class="shows-grid" id="shows-grid">
+      <!-- wird per JS aus termine.yaml befüllt -->
+    </div>
+    <p class="shows-note">Keine Termine in deiner Stadt? <a href="#kontakt">Schreib uns!</a></p>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos">
+    <div class="section-header">
+      <h2><span class="scratchy">//</span> Videos <span class="scratchy">//</span></h2>
+    </div>
+    <div class="videos-grid">
+
+      <!-- Platzhalter: YouTube-Video-IDs hier eintragen -->
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Maxautomat Live Video 1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <p class="video-caption">Live @ Alte Fabrik – November 2025</p>
+      </div>
+
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Maxautomat Live Video 2"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <p class="video-caption">Proberaum Session – Oktober 2025</p>
+      </div>
+
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Maxautomat Live Video 3"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <p class="video-caption">Open Air – Sommer 2025</p>
+      </div>
+
+    </div>
+    <div class="yt-link-wrap">
+      <a href="https://www.youtube.com/@maxautomat" target="_blank" rel="noopener" class="btn-social yt">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z"/></svg>
+        Alle Videos auf YouTube
+      </a>
+    </div>
+  </section>
+
+  <!-- FOTOS -->
+  <section id="fotos">
+    <div class="section-header">
+      <h2><span class="scratchy">//</span> Fotos <span class="scratchy">//</span></h2>
+    </div>
+    <div class="photo-grid">
+      <!-- Platzhalter-Bilder: src durch echte Fotos ersetzen -->
+      <div class="photo-item" style="background-image: url('fotos/foto1.jpg')">
+        <div class="photo-overlay">Live @ Alte Fabrik</div>
+      </div>
+      <div class="photo-item" style="background-image: url('fotos/foto2.jpg')">
+        <div class="photo-overlay">Open Air 2025</div>
+      </div>
+      <div class="photo-item" style="background-image: url('fotos/foto3.jpg')">
+        <div class="photo-overlay">Backstage</div>
+      </div>
+      <div class="photo-item" style="background-image: url('fotos/foto4.jpg')">
+        <div class="photo-overlay">Proberaum</div>
+      </div>
+      <div class="photo-item" style="background-image: url('fotos/foto5.jpg')">
+        <div class="photo-overlay">Stadtpark 2025</div>
+      </div>
+      <div class="photo-item" style="background-image: url('fotos/foto6.jpg')">
+        <div class="photo-overlay">After Show</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section id="social">
+    <div class="section-header">
+      <h2><span class="scratchy">//</span> Social Media <span class="scratchy">//</span></h2>
+    </div>
+    <div class="social-links">
+
+      <a href="https://www.instagram.com/maxautomat" target="_blank" rel="noopener" class="btn-social insta">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        Instagram
+      </a>
+
+      <a href="https://www.facebook.com/maxautomat" target="_blank" rel="noopener" class="btn-social fb">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        Facebook
+      </a>
+
+      <a href="https://www.youtube.com/@maxautomat" target="_blank" rel="noopener" class="btn-social yt">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.75 15.5v-7l6.25 3.5-6.25 3.5z"/></svg>
+        YouTube
+      </a>
+
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt">
+    <div class="section-header">
+      <h2><span class="scratchy">//</span> Kontakt <span class="scratchy">//</span></h2>
+    </div>
+    <div class="kontakt-wrap">
+      <div class="kontakt-text">
+        <p>Buchungsanfragen, Kooperationen oder einfach Hallo sagen?<br>Schreib uns – wir melden uns!</p>
+        <p class="kontakt-mail">
+          <a href="mailto:info@maxautomat.de">info@maxautomat.de</a>
+        </p>
+      </div>
+      <form class="kontakt-form" action="#" method="post">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Dein Name" required />
+          <input type="email" name="email" placeholder="Deine E-Mail" required />
+        </div>
+        <input type="text" name="betreff" placeholder="Betreff" />
+        <textarea name="nachricht" rows="5" placeholder="Deine Nachricht..." required></textarea>
+        <button type="submit" class="btn-primary">Abschicken</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">MAXAUTOMAT</span>
+      <nav class="footer-nav">
+        <a href="#termine">Termine</a>
+        <a href="#videos">Videos</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Maxautomat. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
